@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="taotaoportalweb:war">
+    <output-path>$PROJECT_DIR$/taotaoportalweb/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>taotaoportalweb</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="taotao-portal-web.war">
+      <element id="artifact" artifact-name="taotaoportalweb:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/taotaocontent/taotao-content-service" />
+    <file type="web" url="file://$PROJECT_DIR$/taotaomanager/taotao-manager-service" />
+    <file type="web" url="file://$PROJECT_DIR$/taotaomanagerweb" />
+    <file type="web" url="file://$PROJECT_DIR$/taotaoportalweb" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/taotaoparent/pom.xml" />
+        <option value="$PROJECT_DIR$/taotaomanager/pom.xml" />
+        <option value="$PROJECT_DIR$/taotaomanagerweb/pom.xml" />
+        <option value="$PROJECT_DIR$/taotaoutils/pom.xml" />
+        <option value="$PROJECT_DIR$/taotaoportalweb/pom.xml" />
+        <option value="$PROJECT_DIR$/taotaocontent/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

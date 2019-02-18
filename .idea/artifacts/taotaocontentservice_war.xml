@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="taotaocontentservice:war">
+    <output-path>$PROJECT_DIR$/taotaocontent/taotao-content-service/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>taotaocontentservice</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="taotao-content-service.war">
+      <element id="artifact" artifact-name="taotaocontentservice:war exploded" />
+    </root>
+  </artifact>
+</component>

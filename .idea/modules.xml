@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/taotaocontent/taotaocontent.iml" filepath="$PROJECT_DIR$/taotaocontent/taotaocontent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaocontent/taotao-content-interface/taotaocontentinterface.iml" filepath="$PROJECT_DIR$/taotaocontent/taotao-content-interface/taotaocontentinterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaocontent/taotao-content-service/taotaocontentservice.iml" filepath="$PROJECT_DIR$/taotaocontent/taotao-content-service/taotaocontentservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaomanager/taotaomanager.iml" filepath="$PROJECT_DIR$/taotaomanager/taotaomanager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaomanager/taotao-manager-dao/taotaomanagerdao.iml" filepath="$PROJECT_DIR$/taotaomanager/taotao-manager-dao/taotaomanagerdao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaomanager/taotao-manager-interface/taotaomanagerinterface.iml" filepath="$PROJECT_DIR$/taotaomanager/taotao-manager-interface/taotaomanagerinterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaomanager/taotao-manager-pojo/taotaomanagerpojo.iml" filepath="$PROJECT_DIR$/taotaomanager/taotao-manager-pojo/taotaomanagerpojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaomanager/taotao-manager-service/taotaomanagerservice.iml" filepath="$PROJECT_DIR$/taotaomanager/taotao-manager-service/taotaomanagerservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaomanagerweb/taotaomanagerweb.iml" filepath="$PROJECT_DIR$/taotaomanagerweb/taotaomanagerweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaoparent/taotaoparent.iml" filepath="$PROJECT_DIR$/taotaoparent/taotaoparent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaoportalweb/taotaoportalweb.iml" filepath="$PROJECT_DIR$/taotaoportalweb/taotaoportalweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaoutils/taotaoutils.iml" filepath="$PROJECT_DIR$/taotaoutils/taotaoutils.iml" />
+    </modules>
+  </component>
+</project>
