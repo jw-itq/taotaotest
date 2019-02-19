@@ -62,9 +62,13 @@ function menuHandler(item){
 	}else if(item.name === "delete"){
 		$.messager.confirm('确认','确定删除名为 '+node.text+' 的分类吗？',function(r){
 			if(r){
-				$.post("/content/category/delete/",{parentId:node.parentId,id:node.id},function(){
+			    /*alert(node.parentId+'      '+node.id);*/
+				/*$.post("/content/category/delete",{parentId:node.parentId,id:node.id},function(){
 					tree.tree("remove",node.target);
-				});	
+				});	*/
+                $.post("/content/category/delete",{id:node.id},function(){
+                    tree.tree("remove",node.target);
+                });
 			}
 		});
 	}

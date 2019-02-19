@@ -10,4 +10,6 @@ public interface ContentCategoryService {
     List<EasyUITreeNode> getCotentCategoryList(Long parentId);
 
     TaotaoResult addContentCategory(Long parentId,String name);
+
+    TaotaoResult deleteContentCategory(Long id);
 }
