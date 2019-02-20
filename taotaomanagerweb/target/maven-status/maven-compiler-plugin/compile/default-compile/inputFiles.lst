@@ -1,6 +1,7 @@
 /home/IDEA/taotaotest/taotaomanagerweb/src/main/java/com/taotao/controller/TbItemController.java
 /home/IDEA/taotaotest/taotaomanagerweb/src/main/java/com/taotao/controller/TbItemCatController.java
 /home/IDEA/taotaotest/taotaomanagerweb/src/main/java/com/taotao/controller/PageController.java
+/home/IDEA/taotaotest/taotaomanagerweb/src/main/java/com/taotao/controller/IndexManagerController.java
 /home/IDEA/taotaotest/taotaomanagerweb/src/main/java/com/taotao/managerweb/utils/FastDFSClient.java
 /home/IDEA/taotaotest/taotaomanagerweb/src/main/java/com/taotao/controller/ContentController.java
 /home/IDEA/taotaotest/taotaomanagerweb/src/main/java/com/taotao/controller/PictureController.java

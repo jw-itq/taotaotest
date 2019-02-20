@@ -48,6 +48,7 @@
     <orderEntry type="module" module-name="taotaomanagerinterface" />
     <orderEntry type="module" module-name="taotaomanagerpojo" />
     <orderEntry type="module" module-name="taotaocontentinterface" />
+    <orderEntry type="module" module-name="taotaosearchinterface" />
     <orderEntry type="library" name="Maven: junit:junit:4.12" level="project" />
     <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.2.4.RELEASE" level="project" />

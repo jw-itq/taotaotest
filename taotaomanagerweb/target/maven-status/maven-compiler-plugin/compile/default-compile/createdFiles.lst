@@ -1,4 +1,5 @@
 com/taotao/controller/TbItemCatController.class
+com/taotao/controller/IndexManagerController.class
 com/taotao/managerweb/utils/FastDFSClient.class
 com/taotao/controller/ContentCategoryController.class
 com/taotao/controller/PageController.class
