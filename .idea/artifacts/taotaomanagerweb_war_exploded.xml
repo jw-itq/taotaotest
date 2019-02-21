@@ -40,6 +40,9 @@
           <element id="archive" name="taotao-content-interface-1.0-SNAPSHOT.jar">
             <element id="module-output" name="taotaocontentinterface" />
           </element>
+          <element id="archive" name="taotao-search-interface-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="taotaosearchinterface" />
+          </element>
           <element id="library" level="project" name="Maven: junit:junit:4.12" />
           <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.2.4.RELEASE" />

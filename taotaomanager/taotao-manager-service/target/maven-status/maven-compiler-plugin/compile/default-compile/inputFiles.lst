@@ -1,2 +1,5 @@
+/home/IDEA/taotaotest/taotaomanager/taotao-manager-service/src/main/java/com/taotao/jedis/JedisClient.java
+/home/IDEA/taotaotest/taotaomanager/taotao-manager-service/src/main/java/com/taotao/jedis/JedisClientCluster.java
 /home/IDEA/taotaotest/taotaomanager/taotao-manager-service/src/main/java/com/taotao/service/Impl/TbItemServiceImpl.java
+/home/IDEA/taotaotest/taotaomanager/taotao-manager-service/src/main/java/com/taotao/jedis/JedisClientPool.java
 /home/IDEA/taotaotest/taotaomanager/taotao-manager-service/src/main/java/com/taotao/service/Impl/TbItemCatServiceImpl.java

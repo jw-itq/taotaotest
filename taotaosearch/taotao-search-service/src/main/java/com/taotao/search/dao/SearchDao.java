@@ -40,7 +40,7 @@ public class SearchDao {
             if(StringUtils.isNotBlank(image)){
                 image = image.split(",")[0];
             }
-            item.setId(image);
+            item.setImage(image);
 
             item.setPrice((Long) solrDocument.get("item_price"));
             item.setSell_point((String) solrDocument.get("item_sell_point"));

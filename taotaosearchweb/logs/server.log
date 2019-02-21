@@ -1068,3 +1068,782 @@ Caused by: java.net.ConnectException: 拒绝连接: /192.168.122.1:20882
 
 [INFO ] 2019-02-20 19:11:55,126 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
  [DUBBO] Start NettyClient /192.168.122.1 connect to the server /192.168.122.1:20882, dubbo version: 2.5.3, current host: 192.168.122.1
+
+
+[INFO ] 2019-02-21 00:07:34,659 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'taotao-search-web': initialization started
+
+
+[INFO ] 2019-02-21 00:07:34,683 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'taotao-search-web-servlet': startup date [Thu Feb 21 00:07:34 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-02-21 00:07:34,752 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-02-21 00:07:35,265 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-02-21 00:07:35,440 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [/home/IDEA/taotaotest/taotaosearchweb/target/classes/resources/resources.properties]
+
+
+[INFO ] 2019-02-21 00:07:35,449 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-02-21 00:07:35,895 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file /home/shiwanming/.dubbo/dubbo-registry-127.0.0.1.cache, data: {com.taotao.content.service.ContentCategoryService=empty://192.168.122.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,getCotentCategoryList&pid=12351&side=provider&timeout=300000&timestamp=1550678827488, com.taotao.search.service.SearchService=empty://192.168.122.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=12390&side=provider&timeout=300000&timestamp=1550678841127, com.taotao.service.TbItemCatService=empty://192.168.122.1:20880/com.taotao.service.TbItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.TbItemCatService&methods=getTbItemCatList&pid=12371&side=provider&timeout=300000&timestamp=1550678839751, com.taotao.content.service.ContentService=empty://192.168.122.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentByCid,addContent&pid=12351&side=provider&timeout=300000&timestamp=1550678828725, com.taotao.search.service.SearchItemService=empty://192.168.122.1:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=12390&side=provider&timeout=300000&timestamp=1550678840672, com.taotao.service.TbItemService=empty://192.168.122.1:20880/com.taotao.service.TbItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.TbItemService&methods=getItemList,addTbItem,findTbItemById&pid=12371&side=provider&timeout=300000&timestamp=1550678838471}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-02-21 00:07:35,914 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-02-21 00:07:35,953 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-02-21 00:07:35,955 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=localhost
+
+
+[INFO ] 2019-02-21 00:07:35,956 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_181
+
+
+[INFO ] 2019-02-21 00:07:35,956 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-02-21 00:07:35,956 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=/usr/java/jdk1.8.0_181/jre
+
+
+[INFO ] 2019-02-21 00:07:35,957 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=/opt/idea/idea-IU-183.4886.37/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar:/opt/idea/idea-IU-183.4886.37/lib/idea_rt.jar
+
+
+[INFO ] 2019-02-21 00:07:35,957 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+
+
+[INFO ] 2019-02-21 00:07:35,958 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=/tmp
+
+
+[INFO ] 2019-02-21 00:07:35,959 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-02-21 00:07:35,964 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Linux
+
+
+[INFO ] 2019-02-21 00:07:35,965 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-02-21 00:07:35,965 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=3.10.0-957.1.3.el7.x86_64
+
+
+[INFO ] 2019-02-21 00:07:35,968 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=shiwanming
+
+
+[INFO ] 2019-02-21 00:07:35,969 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=/home/shiwanming
+
+
+[INFO ] 2019-02-21 00:07:35,969 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=/home/IDEA/taotaotest/taotaosearchweb
+
+
+[INFO ] 2019-02-21 00:07:35,970 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@1ab9aa1a
+
+
+[INFO ] 2019-02-21 00:07:35,990 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-02-21 00:07:35,999 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+
+[INFO ] 2019-02-21 00:07:36,074 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x16908498d670030, negotiated timeout = 30000
+
+
+[INFO ] 2019-02-21 00:07:36,076 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-02-21 00:07:36,159 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.122.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=12464&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550678855745, dubbo version: 2.5.3, current host: 192.168.122.1
+
+
+[INFO ] 2019-02-21 00:07:36,266 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.122.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=12464&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550678855745, dubbo version: 2.5.3, current host: 192.168.122.1
+
+
+[INFO ] 2019-02-21 00:07:36,428 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.122.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=12464&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550678855745, urls: [dubbo://192.168.122.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=12390&side=provider&timeout=300000&timestamp=1550678841127, empty://192.168.122.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=12464&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550678855745, empty://192.168.122.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=12464&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550678855745], dubbo version: 2.5.3, current host: 192.168.122.1
+
+
+[INFO ] 2019-02-21 00:07:36,746 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.122.1:20882 from NettyClient 192.168.122.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x96fcc3c4, /192.168.122.1:50948 => /192.168.122.1:20882]], dubbo version: 2.5.3, current host: 192.168.122.1
+
+
+[INFO ] 2019-02-21 00:07:36,763 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient /192.168.122.1 connect to the server /192.168.122.1:20882, dubbo version: 2.5.3, current host: 192.168.122.1
+
+
+[INFO ] 2019-02-21 00:07:36,889 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.search.service.SearchService from url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-search-web&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=12464&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1550678855745, dubbo version: 2.5.3, current host: 192.168.122.1
+
+
+[INFO ] 2019-02-21 00:07:37,364 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String com.taotao.search.controller.SearchController.search(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2019-02-21 00:07:39,043 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-search-web-servlet': startup date [Thu Feb 21 00:07:34 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-02-21 00:07:39,221 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-search-web-servlet': startup date [Thu Feb 21 00:07:34 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-02-21 00:07:39,465 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'taotao-search-web': initialization completed in 4803 ms
+
+
+[INFO ] 2019-02-21 13:11:59,235 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'taotao-search-web': initialization started
+
+
+[INFO ] 2019-02-21 13:11:59,314 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'taotao-search-web-servlet': startup date [Thu Feb 21 13:11:59 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-02-21 13:11:59,362 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-02-21 13:11:59,836 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-02-21 13:11:59,999 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [/home/IDEA/taotaotest/taotaosearchweb/target/classes/resources/resources.properties]
+
+
+[INFO ] 2019-02-21 13:12:00,008 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-02-21 13:12:00,533 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file /home/shiwanming/.dubbo/dubbo-registry-127.0.0.1.cache, data: {com.taotao.content.service.ContentCategoryService=empty://192.168.42.96:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,getCotentCategoryList&pid=23864&side=provider&timeout=300000&timestamp=1550725903245, com.taotao.search.service.SearchService=empty://192.168.42.96:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=23846&side=provider&timeout=300000&timestamp=1550725900656, com.taotao.service.TbItemCatService=empty://192.168.42.96:20880/com.taotao.service.TbItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.TbItemCatService&methods=getTbItemCatList&pid=23882&side=provider&timeout=300000&timestamp=1550725907829, com.taotao.content.service.ContentService=empty://192.168.42.96:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentByCid,addContent&pid=23864&side=provider&timeout=300000&timestamp=1550725904152, com.taotao.search.service.SearchItemService=empty://192.168.42.96:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=23846&side=provider&timeout=300000&timestamp=1550725899379, com.taotao.service.TbItemService=empty://192.168.42.96:20880/com.taotao.service.TbItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.TbItemService&methods=getItemList,addTbItem,findTbItemById&pid=23882&side=provider&timeout=300000&timestamp=1550725907219}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-02-21 13:12:00,564 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-02-21 13:12:00,605 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-02-21 13:12:00,612 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=localhost
+
+
+[INFO ] 2019-02-21 13:12:00,612 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_181
+
+
+[INFO ] 2019-02-21 13:12:00,612 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-02-21 13:12:00,613 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=/usr/java/jdk1.8.0_181/jre
+
+
+[INFO ] 2019-02-21 13:12:00,613 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=/opt/idea/idea-IU-183.4886.37/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar:/opt/idea/idea-IU-183.4886.37/lib/idea_rt.jar
+
+
+[INFO ] 2019-02-21 13:12:00,613 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+
+
+[INFO ] 2019-02-21 13:12:00,613 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=/tmp
+
+
+[INFO ] 2019-02-21 13:12:00,614 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-02-21 13:12:00,615 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Linux
+
+
+[INFO ] 2019-02-21 13:12:00,615 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-02-21 13:12:00,615 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=3.10.0-957.1.3.el7.x86_64
+
+
+[INFO ] 2019-02-21 13:12:00,616 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=shiwanming
+
+
+[INFO ] 2019-02-21 13:12:00,616 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=/home/shiwanming
+
+
+[INFO ] 2019-02-21 13:12:00,616 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=/home/IDEA/taotaotest/taotaosearchweb
+
+
+[INFO ] 2019-02-21 13:12:00,617 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@266c2f6c
+
+
+[INFO ] 2019-02-21 13:12:00,647 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-02-21 13:12:00,652 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+
+[INFO ] 2019-02-21 13:12:00,679 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x1690e044f8e0003, negotiated timeout = 30000
+
+
+[INFO ] 2019-02-21 13:12:00,682 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-02-21 13:12:00,711 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.42.96/com.taotao.search.service.SearchService?application=taotao-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=23959&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550725920355, dubbo version: 2.5.3, current host: 192.168.42.96
+
+
+[INFO ] 2019-02-21 13:12:00,844 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.42.96/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=23959&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550725920355, dubbo version: 2.5.3, current host: 192.168.42.96
+
+
+[INFO ] 2019-02-21 13:12:01,445 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.42.96/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=23959&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550725920355, urls: [dubbo://192.168.42.96:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=23846&side=provider&timeout=300000&timestamp=1550725900656, empty://192.168.42.96/com.taotao.search.service.SearchService?application=taotao-search-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=23959&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550725920355, empty://192.168.42.96/com.taotao.search.service.SearchService?application=taotao-search-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=23959&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550725920355], dubbo version: 2.5.3, current host: 192.168.42.96
+
+
+[INFO ] 2019-02-21 13:12:01,756 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.42.96:20882 from NettyClient 192.168.42.96 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xe5e8b5b6, /192.168.42.96:40868 => /192.168.42.96:20882]], dubbo version: 2.5.3, current host: 192.168.42.96
+
+
+[INFO ] 2019-02-21 13:12:01,757 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient /192.168.42.96 connect to the server /192.168.42.96:20882, dubbo version: 2.5.3, current host: 192.168.42.96
+
+
+[INFO ] 2019-02-21 13:12:01,832 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.search.service.SearchService from url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-search-web&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=23959&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1550725920355, dubbo version: 2.5.3, current host: 192.168.42.96
+
+
+[INFO ] 2019-02-21 13:12:02,667 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String com.taotao.search.controller.SearchController.search(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2019-02-21 13:12:04,277 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-search-web-servlet': startup date [Thu Feb 21 13:11:59 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-02-21 13:12:04,431 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-search-web-servlet': startup date [Thu Feb 21 13:11:59 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-02-21 13:12:04,699 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'taotao-search-web': initialization completed in 5418 ms
+
+
+[INFO ] 2019-02-21 21:43:18,311 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'taotao-search-web': initialization started
+
+
+[INFO ] 2019-02-21 21:43:18,372 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'taotao-search-web-servlet': startup date [Thu Feb 21 21:43:18 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-02-21 21:43:18,407 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-02-21 21:43:18,815 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-02-21 21:43:18,935 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [/home/IDEA/taotaotest/taotaosearchweb/target/classes/resources/resources.properties]
+
+
+[INFO ] 2019-02-21 21:43:18,939 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-02-21 21:43:19,266 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file /home/shiwanming/.dubbo/dubbo-registry-127.0.0.1.cache, data: {com.taotao.content.service.ContentCategoryService=empty://192.168.42.144:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,getCotentCategoryList&pid=27955&side=provider&timeout=300000&timestamp=1550756454730, com.taotao.search.service.SearchService=empty://192.168.42.144:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=28021&side=provider&timeout=300000&timestamp=1550756483694, com.taotao.service.TbItemCatService=empty://192.168.42.96/com.taotao.service.TbItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.TbItemCatService&methods=getTbItemCatList&pid=24011&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550725962241 empty://192.168.42.96/com.taotao.service.TbItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.TbItemCatService&methods=getTbItemCatList&pid=24011&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550725962241 dubbo://192.168.42.96:20880/com.taotao.service.TbItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.TbItemCatService&methods=getTbItemCatList&pid=23882&side=provider&timeout=300000&timestamp=1550725907829, com.taotao.content.service.ContentService=empty://192.168.42.144/com.taotao.content.service.ContentService?application=taotao-portal-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentByCid,addContent&pid=28061&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550756531886 empty://192.168.42.144/com.taotao.content.service.ContentService?application=taotao-portal-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentByCid,addContent&pid=28061&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550756531886 dubbo://192.168.42.144:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentByCid,addContent&pid=27955&side=provider&timeout=300000&timestamp=1550756455234, com.taotao.search.service.SearchItemService=empty://192.168.42.144:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=28021&side=provider&timeout=300000&timestamp=1550756483009, com.taotao.service.TbItemService=empty://192.168.42.96/com.taotao.service.TbItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.TbItemService&methods=getItemList,addTbItem,findTbItemById&pid=24011&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550725964597 empty://192.168.42.96/com.taotao.service.TbItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.TbItemService&methods=getItemList,addTbItem,findTbItemById&pid=24011&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550725964597 dubbo://192.168.42.96:20880/com.taotao.service.TbItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.TbItemService&methods=getItemList,addTbItem,findTbItemById&pid=23882&side=provider&timeout=300000&timestamp=1550725907219}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-02-21 21:43:19,293 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-02-21 21:43:19,310 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-02-21 21:43:19,312 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=localhost
+
+
+[INFO ] 2019-02-21 21:43:19,312 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_181
+
+
+[INFO ] 2019-02-21 21:43:19,313 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-02-21 21:43:19,313 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=/usr/java/jdk1.8.0_181/jre
+
+
+[INFO ] 2019-02-21 21:43:19,313 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=/opt/idea/idea-IU-183.4886.37/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar:/opt/idea/idea-IU-183.4886.37/lib/idea_rt.jar
+
+
+[INFO ] 2019-02-21 21:43:19,313 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+
+
+[INFO ] 2019-02-21 21:43:19,314 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=/tmp
+
+
+[INFO ] 2019-02-21 21:43:19,314 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-02-21 21:43:19,315 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Linux
+
+
+[INFO ] 2019-02-21 21:43:19,315 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-02-21 21:43:19,315 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=3.10.0-957.1.3.el7.x86_64
+
+
+[INFO ] 2019-02-21 21:43:19,316 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=shiwanming
+
+
+[INFO ] 2019-02-21 21:43:19,316 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=/home/shiwanming
+
+
+[INFO ] 2019-02-21 21:43:19,316 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=/home/IDEA/taotaotest/taotaosearchweb
+
+
+[INFO ] 2019-02-21 21:43:19,317 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@40f00ae8
+
+
+[INFO ] 2019-02-21 21:43:19,394 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-02-21 21:43:19,414 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+
+[INFO ] 2019-02-21 21:43:19,494 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x1690f3acdd20003, negotiated timeout = 30000
+
+
+[INFO ] 2019-02-21 21:43:19,496 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-02-21 21:43:19,527 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.42.144/com.taotao.search.service.SearchService?application=taotao-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=28142&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550756599124, dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 21:43:19,584 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.42.144/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=28142&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550756599124, dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 21:43:19,686 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.42.144/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=28142&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550756599124, urls: [dubbo://192.168.42.144:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=28021&side=provider&timeout=300000&timestamp=1550756483694, empty://192.168.42.144/com.taotao.search.service.SearchService?application=taotao-search-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=28142&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550756599124, empty://192.168.42.144/com.taotao.search.service.SearchService?application=taotao-search-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=28142&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550756599124], dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 21:43:19,828 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.42.144:20882 from NettyClient 192.168.42.144 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x79a4512d, /192.168.42.144:41218 => /192.168.42.144:20882]], dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 21:43:19,828 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient /192.168.42.144 connect to the server /192.168.42.144:20882, dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 21:43:19,875 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.search.service.SearchService from url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-search-web&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=28142&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1550756599124, dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 21:43:20,074 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String com.taotao.search.controller.SearchController.search(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2019-02-21 21:43:20,579 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-search-web-servlet': startup date [Thu Feb 21 21:43:18 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-02-21 21:43:20,624 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-search-web-servlet': startup date [Thu Feb 21 21:43:18 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-02-21 21:43:20,737 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'taotao-search-web': initialization completed in 2404 ms
+
+
+[WARN ] 2019-02-21 22:01:38,673 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: 拒绝连接 (Connection refused), suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.122.1:8983/solr/core_new1, stackTrace=[Ljava.lang.StackTraceElement;@5173369f}, dubbo version: 2.5.3, current host: 192.168.42.144
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: 拒绝连接 (Connection refused), suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.122.1:8983/solr/core_new1, stackTrace=[Ljava.lang.StackTraceElement;@5173369f}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-02-21 22:01:38,733 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: 拒绝连接 (Connection refused), suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.122.1:8983/solr/core_new1, stackTrace=[Ljava.lang.StackTraceElement;@f3fe918}, dubbo version: 2.5.3, current host: 192.168.42.144
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: 拒绝连接 (Connection refused), suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.122.1:8983/solr/core_new1, stackTrace=[Ljava.lang.StackTraceElement;@f3fe918}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-02-21 22:01:38,739 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: 拒绝连接 (Connection refused), suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.122.1:8983/solr/core_new1, stackTrace=[Ljava.lang.StackTraceElement;@4af8c579}, dubbo version: 2.5.3, current host: 192.168.42.144
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: 拒绝连接 (Connection refused), suppressedExceptions=[], detailMessage=Server refused connection at: http://192.168.122.1:8983/solr/core_new1, stackTrace=[Ljava.lang.StackTraceElement;@4af8c579}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2019-02-21 22:03:53,158 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.42.144:20882,url:dubbo://192.168.42.144:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.search.service.SearchService&methods=search&pid=28142&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1550756599124, dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[WARN ] 2019-02-21 22:03:54,177 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.42.144:20882 find error . url: dubbo://192.168.42.144:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.search.service.SearchService&methods=search&pid=28142&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1550756599124, dubbo version: 2.5.3, current host: 192.168.42.144
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.42.144:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.search.service.SearchService&methods=search&pid=28142&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1550756599124) failed to connect to server /192.168.42.144:20882, error message is:拒绝连接: /192.168.42.144:20882
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: 拒绝连接: /192.168.42.144:20882
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+
+
+[INFO ] 2019-02-21 22:04:16,514 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.42.144/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=28142&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550756599124, urls: [empty://192.168.42.144/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=28142&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550756599124], dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 22:06:33,889 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.42.144/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=28142&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550756599124, urls: [dubbo://192.168.42.144:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=29546&side=provider&timeout=300000&timestamp=1550757993467], dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 22:06:33,891 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.42.144:20882 from NettyClient 192.168.42.144 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x4276b8d5, /192.168.42.144:52566 => /192.168.42.144:20882]], dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 22:06:33,891 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient /192.168.42.144 connect to the server /192.168.42.144:20882, dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 22:17:55,579 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'taotao-search-web': initialization started
+
+
+[INFO ] 2019-02-21 22:17:55,631 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'taotao-search-web-servlet': startup date [Thu Feb 21 22:17:55 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-02-21 22:17:55,678 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-02-21 22:17:56,164 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-02-21 22:17:56,258 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from file [/home/IDEA/taotaotest/taotaosearchweb/target/classes/resources/resources.properties]
+
+
+[INFO ] 2019-02-21 22:17:56,263 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-02-21 22:17:56,593 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file /home/shiwanming/.dubbo/dubbo-registry-127.0.0.1.cache, data: {com.taotao.content.service.ContentCategoryService=empty://192.168.42.144:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,getCotentCategoryList&pid=27955&side=provider&timeout=300000&timestamp=1550756454730, com.taotao.search.service.SearchService=empty://192.168.42.144:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=29546&side=provider&timeout=300000&timestamp=1550757993467, com.taotao.service.TbItemCatService=empty://192.168.42.96/com.taotao.service.TbItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.TbItemCatService&methods=getTbItemCatList&pid=24011&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550725962241 empty://192.168.42.96/com.taotao.service.TbItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.TbItemCatService&methods=getTbItemCatList&pid=24011&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550725962241 dubbo://192.168.42.96:20880/com.taotao.service.TbItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.TbItemCatService&methods=getTbItemCatList&pid=23882&side=provider&timeout=300000&timestamp=1550725907829, com.taotao.content.service.ContentService=empty://192.168.42.144/com.taotao.content.service.ContentService?application=taotao-portal-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentByCid,addContent&pid=28061&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550756531886 empty://192.168.42.144/com.taotao.content.service.ContentService?application=taotao-portal-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentByCid,addContent&pid=28061&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550756531886 dubbo://192.168.42.144:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentByCid,addContent&pid=27955&side=provider&timeout=300000&timestamp=1550756455234, com.taotao.search.service.SearchItemService=empty://192.168.42.144:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=importItemsToIndex&pid=29546&side=provider&timeout=300000&timestamp=1550757991368, com.taotao.service.TbItemService=empty://192.168.42.96/com.taotao.service.TbItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.TbItemService&methods=getItemList,addTbItem,findTbItemById&pid=24011&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550725964597 empty://192.168.42.96/com.taotao.service.TbItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.TbItemService&methods=getItemList,addTbItem,findTbItemById&pid=24011&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550725964597 dubbo://192.168.42.96:20880/com.taotao.service.TbItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.TbItemService&methods=getItemList,addTbItem,findTbItemById&pid=23882&side=provider&timeout=300000&timestamp=1550725907219}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-02-21 22:17:56,615 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-02-21 22:17:56,663 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-02-21 22:17:56,664 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=localhost
+
+
+[INFO ] 2019-02-21 22:17:56,664 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_181
+
+
+[INFO ] 2019-02-21 22:17:56,665 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-02-21 22:17:56,665 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=/usr/java/jdk1.8.0_181/jre
+
+
+[INFO ] 2019-02-21 22:17:56,665 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=/opt/idea/idea-IU-183.4886.37/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar:/opt/idea/idea-IU-183.4886.37/lib/idea_rt.jar
+
+
+[INFO ] 2019-02-21 22:17:56,665 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+
+
+[INFO ] 2019-02-21 22:17:56,665 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=/tmp
+
+
+[INFO ] 2019-02-21 22:17:56,666 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-02-21 22:17:56,667 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Linux
+
+
+[INFO ] 2019-02-21 22:17:56,667 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-02-21 22:17:56,667 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=3.10.0-957.1.3.el7.x86_64
+
+
+[INFO ] 2019-02-21 22:17:56,667 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=shiwanming
+
+
+[INFO ] 2019-02-21 22:17:56,668 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=/home/shiwanming
+
+
+[INFO ] 2019-02-21 22:17:56,668 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=/home/IDEA/taotaotest/taotaosearchweb
+
+
+[INFO ] 2019-02-21 22:17:56,669 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@73ee9f07
+
+
+[INFO ] 2019-02-21 22:17:56,718 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-02-21 22:17:56,738 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+
+
+[INFO ] 2019-02-21 22:17:56,814 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x1690f3acdd20009, negotiated timeout = 30000
+
+
+[INFO ] 2019-02-21 22:17:56,816 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-02-21 22:17:56,841 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.42.144/com.taotao.search.service.SearchService?application=taotao-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=30043&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550758676456, dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 22:17:57,054 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.42.144/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=30043&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550758676456, dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 22:17:57,266 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.42.144/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=30043&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550758676456, urls: [dubbo://192.168.42.144:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=29546&side=provider&timeout=300000&timestamp=1550757993467, empty://192.168.42.144/com.taotao.search.service.SearchService?application=taotao-search-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=30043&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550758676456, empty://192.168.42.144/com.taotao.search.service.SearchService?application=taotao-search-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=30043&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550758676456], dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 22:17:57,436 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.42.144:20882 from NettyClient 192.168.42.144 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xc716a531, /192.168.42.144:58262 => /192.168.42.144:20882]], dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 22:17:57,436 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient /192.168.42.144 connect to the server /192.168.42.144:20882, dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 22:17:57,502 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.search.service.SearchService from url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-search-web&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=30043&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1550758676456, dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 22:17:57,743 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String com.taotao.search.controller.SearchController.search(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2019-02-21 22:17:58,253 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-search-web-servlet': startup date [Thu Feb 21 22:17:55 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-02-21 22:17:58,328 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-search-web-servlet': startup date [Thu Feb 21 22:17:55 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-02-21 22:17:58,427 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'taotao-search-web': initialization completed in 2828 ms
+
+
+[INFO ] 2019-02-21 22:29:20,841 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.42.144:20882,url:dubbo://192.168.42.144:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.search.service.SearchService&methods=search&pid=30043&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1550758676456, dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[WARN ] 2019-02-21 22:29:21,465 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.42.144:20882 find error . url: dubbo://192.168.42.144:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.search.service.SearchService&methods=search&pid=30043&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1550758676456, dubbo version: 2.5.3, current host: 192.168.42.144
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.42.144:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.search.service.SearchService&methods=search&pid=30043&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1550758676456) failed to connect to server /192.168.42.144:20882, error message is:拒绝连接: /192.168.42.144:20882
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: 拒绝连接: /192.168.42.144:20882
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	... 3 more
+
+
+[INFO ] 2019-02-21 22:29:46,062 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.42.144/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=30043&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550758676456, urls: [empty://192.168.42.144/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=30043&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550758676456], dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 22:30:00,477 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.42.144/com.taotao.search.service.SearchService?application=taotao-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=30043&revision=1.0-SNAPSHOT&side=consumer&timestamp=1550758676456, urls: [dubbo://192.168.42.144:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=30713&side=provider&timeout=300000&timestamp=1550759400401], dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 22:30:00,479 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.42.144:20882 from NettyClient 192.168.42.144 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x9abf4b33, /192.168.42.144:36062 => /192.168.42.144:20882]], dubbo version: 2.5.3, current host: 192.168.42.144
+
+
+[INFO ] 2019-02-21 22:30:00,479 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient /192.168.42.144 connect to the server /192.168.42.144:20882, dubbo version: 2.5.3, current host: 192.168.42.144

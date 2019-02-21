@@ -23,7 +23,7 @@ public class SearchServiceImpl implements SearchService {
         solrQuery.setStart((page - 1) * rows);
         if(rows < 1) rows = 10;
         solrQuery.setRows(rows);
-
+        /*solrQuery.set("df","item_title");*/
         solrQuery.set("df","item_title");
 
         solrQuery.setHighlight(true);

@@ -19,7 +19,7 @@ public class TestSolrJ {
 
     @Test
     public void testAddDocument() throws IOException, SolrServerException {
-        SolrServer solrServer = new HttpSolrServer("http://192.168.122.1:8983/solr/core_test");
+        SolrServer solrServer = new HttpSolrServer("http://192.168.122.1:8983/solr/core_new1");
         SolrInputDocument document = new SolrInputDocument();
         document.addField("id","test_3");
         document.addField("item_title","测试商品");
@@ -30,14 +30,14 @@ public class TestSolrJ {
 
     @Test
     public void deleteDocumentById() throws IOException, SolrServerException {
-        SolrServer solrServer = new HttpSolrServer("http://192.168.122.1:8983/solr/core_test");
+        SolrServer solrServer = new HttpSolrServer("http://192.168.122.1:8983/solr/core_new1");
         solrServer.deleteById("123");
         solrServer.commit();
     }
 
     @Test
     public void deleteDocumentByTitle() throws IOException, SolrServerException {
-        SolrServer solrServer = new HttpSolrServer("http://192.168.122.1:8983/solr/core_test");
+        SolrServer solrServer = new HttpSolrServer("http://192.168.122.1:8983/solr/core_new1");
         solrServer.deleteByQuery("item_title:测试商品");
         solrServer.commit();
     }
@@ -45,17 +45,17 @@ public class TestSolrJ {
     @Test
     public void searchDocument() throws SolrServerException {
         //创建一个SolrServer对象
-        SolrServer solrServer = new HttpSolrServer("http://192.168.122.1:8983/solr/core_test");
+        SolrServer solrServer = new HttpSolrServer("http://192.168.122.1:8983/solr/core_new1");
         //创建一个SolrQuery对象
         SolrQuery query = new SolrQuery();
         //设置查询条件、过滤条件、分页条件、排序条件、高亮
         //query.set("q", "*:*");
-        query.setQuery("双卡双待");
+        query.setQuery("联通");
         //分页条件
         query.setStart(0);
         query.setRows(10);
         //设置默认搜索域
-        query.set("df", "item_keywords");
+        query.set("df", "item_title");
         //设置高亮
         query.setHighlight(true);
         //高亮显示的域
@@ -84,6 +84,7 @@ public class TestSolrJ {
             System.out.println(solrDocument.get("item_price"));
             System.out.println(solrDocument.get("item_image"));
             System.out.println(solrDocument.get("item_category_name"));
+            System.out.println(solrDocument.get("item_desc"));
             System.out.println("=============================================");
         }
     }

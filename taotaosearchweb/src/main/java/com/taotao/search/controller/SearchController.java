@@ -21,7 +21,7 @@ public class SearchController {
     @Value("${SEARCH_RESULT_ROWS}")
     private Integer SEARCH_RESULT_ROWS;
 
-    @RequestMapping("/search")
+    @RequestMapping(value = "/search")
     public String search(@RequestParam("q") String queryString, @RequestParam(defaultValue = "1") Integer page, Model model) throws Exception {
         queryString = new String(queryString.getBytes("iso8859-1"),"utf-8");
 

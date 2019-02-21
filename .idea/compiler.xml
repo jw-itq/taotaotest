@@ -8,12 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="taotaocontentinterface" />
         <module name="taotaocontentservice" />
+        <module name="taotaoitemweb" />
         <module name="taotaomanagerdao" />
         <module name="taotaomanagerinterface" />
         <module name="taotaomanagerpojo" />
         <module name="taotaomanagerservice" />
         <module name="taotaomanagerweb" />
         <module name="taotaoportalweb" />
+        <module name="taotaosearchinterface" />
+        <module name="taotaosearchservice" />
+        <module name="taotaosearchweb" />
         <module name="taotaoutils" />
       </profile>
     </annotationProcessing>
@@ -22,6 +26,7 @@
       <module name="taotaocontent" target="1.8" />
       <module name="taotaocontentinterface" target="1.8" />
       <module name="taotaocontentservice" target="1.8" />
+      <module name="taotaoitemweb" target="1.8" />
       <module name="taotaomanager" target="1.8" />
       <module name="taotaomanagerdao" target="1.8" />
       <module name="taotaomanagerinterface" target="1.8" />
@@ -30,6 +35,10 @@
       <module name="taotaomanagerweb" target="1.8" />
       <module name="taotaoparent" target="1.8" />
       <module name="taotaoportalweb" target="1.8" />
+      <module name="taotaosearch" target="1.8" />
+      <module name="taotaosearchinterface" target="1.8" />
+      <module name="taotaosearchservice" target="1.8" />
+      <module name="taotaosearchweb" target="1.8" />
       <module name="taotaoutils" target="1.8" />
       <module name="test" target="1.7" />
     </bytecodeTargetLevel>

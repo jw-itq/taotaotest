@@ -9,6 +9,6 @@
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
 	
 	<bean id="httpSolrServer" class="org.apache.solr.client.solrj.impl.HttpSolrServer">
-		<constructor-arg name="baseURL" value="http://192.168.122.1:8983/solr/core_test"/>
+		<constructor-arg name="baseURL" value="http://192.168.122.1:8983/solr/core_new1"/>
 	</bean>
 </beans>
