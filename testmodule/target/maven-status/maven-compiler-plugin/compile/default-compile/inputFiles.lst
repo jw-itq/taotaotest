@@ -1,0 +1,3 @@
+/home/IDEA/taotaotest/testmodule/src/main/java/com/taotao/controller/UserController.java
+/home/IDEA/taotaotest/testmodule/src/main/java/com/taotao/mq/producer/RocketMQProducer.java
+/home/IDEA/taotaotest/testmodule/src/main/java/com/taotao/mq/listener/MessageListenerImpl.java

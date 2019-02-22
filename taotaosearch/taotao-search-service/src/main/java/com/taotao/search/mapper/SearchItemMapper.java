@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface SearchItemMapper {
     List<TbItemSearch> getItemList();
+
+    TbItemSearch getItemById(Long itemId);
 }

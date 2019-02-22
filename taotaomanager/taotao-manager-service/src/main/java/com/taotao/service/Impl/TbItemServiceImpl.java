@@ -1,7 +1,13 @@
 package com.taotao.service.Impl;
 
+import com.alibaba.rocketmq.client.exception.MQBrokerException;
+import com.alibaba.rocketmq.client.exception.MQClientException;
+import com.alibaba.rocketmq.client.producer.SendResult;
+import com.alibaba.rocketmq.common.message.Message;
+import com.alibaba.rocketmq.remoting.exception.RemotingException;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.taotao.common.pojo.RocketMQProducer;
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.common.utils.IDUtils;
 import com.taotao.common.utils.JsonUtils;
@@ -32,6 +38,9 @@ public class TbItemServiceImpl implements TbItemService {
 
     @Autowired
     private JedisClient jedisClient;
+
+    @Autowired
+    private RocketMQProducer rocketMQProducer;
 
     @Value("${ITEM_INFO}")
     private String ITEM_INFO;
@@ -90,6 +99,19 @@ public class TbItemServiceImpl implements TbItemService {
         tbItemDesc.setUpdated(new Date());
         tbItemDesc.setItemDesc(desc);
         tbItemDescMapper.insert(tbItemDesc);
+        try {
+            Message msg = new Message("TestTopic1","TAG1",itemId.toString().getBytes());
+            SendResult result = rocketMQProducer.getDefaultMQProducer().send(msg);
+            System.out.println("有消息发送------》"+result);
+        }catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (RemotingException e) {
+            e.printStackTrace();
+        } catch (MQClientException e) {
+            e.printStackTrace();
+        } catch (MQBrokerException e) {
+            e.printStackTrace();
+        }
 
         return TaotaoResult.ok();
     }

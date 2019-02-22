@@ -19,6 +19,7 @@
         <module name="taotaosearchservice" />
         <module name="taotaosearchweb" />
         <module name="taotaoutils" />
+        <module name="testmodule" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -41,6 +42,7 @@
       <module name="taotaosearchweb" target="1.8" />
       <module name="taotaoutils" target="1.8" />
       <module name="test" target="1.7" />
+      <module name="testmodule" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

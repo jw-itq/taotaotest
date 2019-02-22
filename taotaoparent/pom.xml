@@ -322,7 +322,8 @@
     <dubbo.version>2.5.3</dubbo.version>
     <zookeeper.version>3.4.7</zookeeper.version>
     <zkclient.version>0.1</zkclient.version>
-    <activemq.version>5.11.2</activemq.version>
+    <!--<activemq.version>5.11.2</activemq.version>-->
+    <rocketmq.version>4.1.0-incubating</rocketmq.version>
     <freemarker.version>2.3.23</freemarker.version>
     <quartz.version>2.2.2</quartz.version>
   </properties>
@@ -502,10 +503,21 @@
         <artifactId>zkclient</artifactId>
         <version>${zkclient.version}</version>
       </dependency>
-      <dependency>
+      <!--<dependency>
         <groupId>org.apache.activemq</groupId>
         <artifactId>activemq-all</artifactId>
         <version>${activemq.version}</version>
+      </dependency>-->
+      <dependency>
+        <groupId>com.alibaba.rocketmq</groupId>
+        <artifactId>rocketmq-client</artifactId>
+        <version>3.2.6</version>
+      </dependency>
+      <dependency>
+        <groupId>com.alibaba.rocketmq</groupId>
+        <artifactId>rocketmq-all</artifactId>
+        <version>3.2.6</version>
+        <type>pom</type>
       </dependency>
       <dependency>
         <groupId>org.freemarker</groupId>
