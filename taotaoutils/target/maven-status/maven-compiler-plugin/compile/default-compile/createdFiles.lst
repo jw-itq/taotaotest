@@ -3,3 +3,4 @@ com/taotao/common/pojo/RocketMQProducer.class
 com/taotao/common/pojo/EasyUIDataGridResult.class
 com/taotao/common/pojo/EasyUITreeNode.class
 com/taotao/common/pojo/SearchResult.class
+com/taotao/common/utils/CookieUtils.class

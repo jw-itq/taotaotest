@@ -18,6 +18,10 @@
       <module fileurl="file://$PROJECT_DIR$/taotaosearch/taotao-search-interface/taotaosearchinterface.iml" filepath="$PROJECT_DIR$/taotaosearch/taotao-search-interface/taotaosearchinterface.iml" />
       <module fileurl="file://$PROJECT_DIR$/taotaosearch/taotao-search-service/taotaosearchservice.iml" filepath="$PROJECT_DIR$/taotaosearch/taotao-search-service/taotaosearchservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/taotaosearchweb/taotaosearchweb.iml" filepath="$PROJECT_DIR$/taotaosearchweb/taotaosearchweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaosso/taotaosso.iml" filepath="$PROJECT_DIR$/taotaosso/taotaosso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaosso/taotao-sso-interface/taotaossointerface.iml" filepath="$PROJECT_DIR$/taotaosso/taotao-sso-interface/taotaossointerface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaosso/taotao-sso-service/taotaossoservice.iml" filepath="$PROJECT_DIR$/taotaosso/taotao-sso-service/taotaossoservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotaossoweb/taotaossoweb.iml" filepath="$PROJECT_DIR$/taotaossoweb/taotaossoweb.iml" />
       <module fileurl="file://$PROJECT_DIR$/taotaoutils/taotaoutils.iml" filepath="$PROJECT_DIR$/taotaoutils/taotaoutils.iml" />
       <module fileurl="file://$PROJECT_DIR$/testmodule/testmodule.iml" filepath="$PROJECT_DIR$/testmodule/testmodule.iml" />
     </modules>

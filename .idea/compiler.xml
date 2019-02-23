@@ -18,6 +18,9 @@
         <module name="taotaosearchinterface" />
         <module name="taotaosearchservice" />
         <module name="taotaosearchweb" />
+        <module name="taotaossointerface" />
+        <module name="taotaossoservice" />
+        <module name="taotaossoweb" />
         <module name="taotaoutils" />
         <module name="testmodule" />
       </profile>
@@ -40,6 +43,10 @@
       <module name="taotaosearchinterface" target="1.8" />
       <module name="taotaosearchservice" target="1.8" />
       <module name="taotaosearchweb" target="1.8" />
+      <module name="taotaosso" target="1.8" />
+      <module name="taotaossointerface" target="1.8" />
+      <module name="taotaossoservice" target="1.8" />
+      <module name="taotaossoweb" target="1.8" />
       <module name="taotaoutils" target="1.8" />
       <module name="test" target="1.7" />
       <module name="testmodule" target="1.8" />
