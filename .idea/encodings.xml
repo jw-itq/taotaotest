@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/taotaocartweb" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/taotaocontent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/taotaocontent/taotao-content-interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/taotaocontent/taotao-content-service" charset="UTF-8" />
@@ -11,6 +12,10 @@
     <file url="file://$PROJECT_DIR$/taotaomanager/taotao-manager-pojo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/taotaomanager/taotao-manager-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/taotaomanagerweb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/taotaoorder" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/taotaoorder/taotao-order-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/taotaoorder/taotao-order-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/taotaoorderweb" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/taotaoparent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/taotaoportalweb" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/taotaosearch" charset="UTF-8" />

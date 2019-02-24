@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="taotaoorderservice:war">
+    <output-path>$PROJECT_DIR$/taotaoorder/taotao-order-service/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>taotaoorderservice</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="taotao-order-service.war">
+      <element id="artifact" artifact-name="taotaoorderservice:war exploded" />
+    </root>
+  </artifact>
+</component>
