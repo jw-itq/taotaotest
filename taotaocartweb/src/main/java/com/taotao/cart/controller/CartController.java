@@ -31,7 +31,7 @@ public class CartController {
     @Autowired
     private TbItemService tbItemService;
 
-    @RequestMapping("cart/add/${itemId}")
+    @RequestMapping("cart/add/{itemId}")
     public String addItemCart(@PathVariable Long itemId,
                               @RequestParam(defaultValue = "1") Integer num,
                               HttpServletRequest request,
